@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA083hQK2XVUexwCfXY+C4PwAAAAACAAAAAAAQZgAAAAEAACAAAABEtjaw9Y0zkGyIfGA1u2Km3gQFCgHJdQSlCM28rpdhCAAAAAAOgAAAAAIAACAAAAAgHrgVWQTpZf8Bf/Qx7UTmzeT3dx3S5Kpc35aKnLyx0CAAAAAfBfKDTsRE5FTssx6GgonpyZ3WA83ZPElXCBongQqT9EAAAABF+Jex4zWrpqrhKOdYYRi7JgalxeoBqdmQMKDCu6anaRE/z4ZUK3qwr/ve5BEV50FBewPTAtKTlYsFhwDMSFip</EncryptedPassword>
+    <_PublishTargetUrl>ftp://web.itu.edu.tr/turkero18/itu.edu.tr/turkero18/</_PublishTargetUrl>
+    <History>False|2021-07-17T10:07:49.8578842Z;</History>
+  </PropertyGroup>
+</Project>

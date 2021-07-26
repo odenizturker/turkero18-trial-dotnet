@@ -1,0 +1,48 @@
+﻿@model IEnumerable<turkero18.Models.Visitor>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a class ="btn btn-primary" asp-action="Create">Create New Visitor</a>
+</p>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Visitor Name
+            </th>
+            <th>
+                Visitor Age
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VisitorName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VisitorAge)
+            </td>
+            <td class="text-center">
+                <a class ="btn btn-success" asp-action="Edit" asp-route-id="@item.ID">Edit</a>
+                <a class ="btn btn-info" asp-action="Details" asp-route-id="@item.ID">Details</a>
+                <a class ="btn btn-danger" asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,20 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var returnUrl = ViewData["ReturnUrl"] as string;
+    var error = TempData["Error"] as string;
+}
+
+<h1>Login</h1>
+<br />
+@if (!string.IsNullOrEmpty(error)) 
+{ 
+    <h3 class="alert-danger">@error</h3>
+}
+<form action="/login?ReturnUrl=@System.Net.WebUtility.UrlEncode(returnUrl)" method="post" >
+    <input class="form-control" type="text" name="username" placeholder="Username" />
+    <br />
+    <input class="form-control" type="password" name="password" placeholder="Password" />
+    <br />
+    <input class="btn btn-success" type="submit" value="Login" />
+</form>
